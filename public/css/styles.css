@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-    height: 10000px;
+    height: 90px;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
     left: 0;
     z-index: 1;
     height: 100px;
-    background-color: PaleTurquoise ;
+    background-color: rgba(255,255,255,.3);
 }
 
 .heading{

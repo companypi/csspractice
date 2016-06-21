@@ -1,8 +1,3 @@
-// myapp.controller('SomethingCtrl', ["$scope", 
-// function ($scope) {
-//     console.log("Something Ctrl Fired");
-// }]);
-
 myapp.controller('MainCtrl', ["$scope", function ($scope) {
 		$scope.data = {};
 
@@ -12,7 +7,7 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
 
             $scope.data.panes[0] = {
                 color: 'PaleVioletRed',
-                heading:"Feature"
+                heading:"Make a reservation"
             };
 
             $scope.data.panes[1] = {
@@ -22,7 +17,9 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
 
             $scope.data.panes[2] = {
                 color: 'Peru',
-                heading:"Menu"
+                heading:"Menu",
+                col1: "col1",
+                col2: "col2"
             };
 
             $scope.data.panes[3] = {
@@ -48,7 +45,7 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
 }]);
 
 
-angular.module('PdiApp', ['hj.scrollify', 'myapp']).config(function() {});
+
 
 angular.module('PdiApp', ['hj.scrollify', 'myapp']).directive("navscroll", function($window) {
     return function(scope, element, attrs) {
