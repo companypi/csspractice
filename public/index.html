@@ -8,6 +8,8 @@
 
 	<!-- CSSs -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" type="text/css">
+    
     
     <!-- API -->
 	<script src="libs/angular/angular.js"></script>
@@ -19,8 +21,15 @@
 	
 </head>
 <body>
-        <div ng-view>
-        </div>
+	<nav>
+		<header  data-navscroll  ng-class="{min:boolChangeClass}">
+		<!-- <p data-ng-bind="scrollPosition"></p> -->
+		</header>
+		<section></section>
+	</nav>
+
+    <div ng-view>
+    </div>
 </body>
 </html>
 
