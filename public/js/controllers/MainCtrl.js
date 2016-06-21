@@ -8,24 +8,26 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
 
         $scope.data.panes = [];
 
-        for (var i = 0; i < 4; i++) {
+        for (var i = 0; i < 5; i++) {
 
             $scope.data.panes[0] = {
-                color: 'pink',
-                text:1,
-                heading:"First Heading"
+                color: 'PaleVioletRed',
+                heading:"Feature"
             };
 
             $scope.data.panes[1] = {
-                color: 'blue',
-                text: 'two',
-                heading:"Second Heading"
+                color: 'PapayaWhip',
+                heading:"About us"
             };
 
             $scope.data.panes[2] = {
-                color: 'yellow',
-                text: '3',
-                heading:"Third Heading"
+                color: 'Peru',
+                heading:"Menu"
+            };
+
+            $scope.data.panes[3] = {
+                color: 'Plum',
+                heading:"Contact us"
             };
 
         }
