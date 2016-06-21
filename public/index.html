@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myapp">
+<html>
 <head>
 	<base href='/'></base>
 
@@ -14,22 +14,22 @@
     <!-- API -->
 	<script src="libs/angular/angular.js"></script>
 	<script src="libs/angular-route/angular-route.js"></script>
-
+	<script type="text/javascript" src="libs/hamsterjs/hamster.js"></script>
+    <script type="text/javascript" src="libs/lethargy/lethargy.js"></script>
+    <script type="text/javascript" src="libs/hammerjs/hammer.js"></script>
+    <script type="text/javascript" src="js/angular-scrollify.js"></script>
 	
 	<script src="js/appRoutes.js"></script>
-	<script src="js/controllers/SomethingCtrl.js"></script>
+	<script src="js/controllers/MainCtrl.js"></script>
 	
 </head>
-<body>
+<body ng-app="PdiApp">
 	<nav>
 		<header  data-navscroll  ng-class="{min:boolChangeClass}">
-		<!-- <p data-ng-bind="scrollPosition"></p> -->
 		</header>
-		<section></section>
 	</nav>
-
-    <div ng-view>
-    </div>
+	<div ng-view>
+	</div>
 </body>
 </html>
 
