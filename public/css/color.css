@@ -1,7 +1,5 @@
-.white-40{
-	background: rgba(255,255,255,.4);
-}
+.white-40 {
+  background: rgba(255, 255, 255, 0.4); }
 
-.white-80{
-	background: rgba(255,255,255,.8);
-}
+.white-80 {
+  background: rgba(255, 255, 255, 0.8); }
