@@ -1,3 +1,4 @@
+
 html {
     overflow-y: scroll;
 }
@@ -120,3 +121,14 @@ header {
     left: 0;
     right: 0;
 }
+
+.feature-bg{
+  background: pink;
+}
+
+.img-bg-feature{
+    background: url('../img/seafood01.jpg') no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+

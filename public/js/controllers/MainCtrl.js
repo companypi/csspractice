@@ -6,24 +6,24 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
         for (var i = 0; i < 5; i++) {
 
             $scope.data.panes[0] = {
-                color: 'PaleVioletRed',
+                classes:"img-bg-feature img-bg content img-bg",
                 heading:"Make a reservation"
             };
 
             $scope.data.panes[1] = {
-                color: 'Peru',
+                classes:"feature-bg img-bg",
                 heading:"About us"
             };
 
             $scope.data.panes[2] = {
-                color: 'PapayaWhip',
+                classes:"feature-bg img-bg",
                 heading:"Menu",
                 col1: "col1",
                 col2: "col2"
             };
 
             $scope.data.panes[3] = {
-                color: 'Plum',
+                classes:"feature-bg img-bg",
                 heading:"Contact us"
             };
 
