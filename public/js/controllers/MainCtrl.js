@@ -11,12 +11,12 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
             };
 
             $scope.data.panes[1] = {
-                color: 'PapayaWhip',
+                color: 'Peru',
                 heading:"About us"
             };
 
             $scope.data.panes[2] = {
-                color: 'Peru',
+                color: 'PapayaWhip',
                 heading:"Menu",
                 col1: "col1",
                 col2: "col2"
@@ -29,8 +29,6 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
 
         }
 
-        console.log($scope.data.panes);
-
         $scope.top = function() {
             $scope.$broadcast('scrollify:goTo', {
                 pane: 0,
@@ -39,9 +37,6 @@ myapp.controller('MainCtrl', ["$scope", function ($scope) {
             });
         };
 
-        $scope.$on('scrollify:change', function(event, args) {
-            console.log(args);
-        });
 }]);
 
 
